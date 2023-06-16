@@ -229,7 +229,11 @@ class DashboardView extends StatefulWidget {
                 itemBuilder: (BuildContext context, int index) {
                   var item = controller.products[index];
                   return InkWell(
-                    onTap: () {},
+                    onTap: () => Get.to(
+                      ProductDetailView(
+                        item: item,
+                      ),
+                    ),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [

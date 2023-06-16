@@ -4,6 +4,7 @@ Latihan Slicing UI Ecommence
 
 ## Sreenshot
 <img src="https://raw.githubusercontent.com/riyanhadi/slicing_ui_ecommence/main/screenshot/dashboard.png" alt="" width="300">
+<img src="https://raw.githubusercontent.com/riyanhadi/slicing_ui_ecommence/main/screenshot/product_detail.png" alt="" width="300">
 <img src="https://raw.githubusercontent.com/riyanhadi/slicing_ui_ecommence/main/screenshot/cart.png" alt="" width="300">
 
 ## Referensi Desain
