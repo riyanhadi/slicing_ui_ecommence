@@ -60,38 +60,41 @@ class MainNavigationView extends StatefulWidget {
           index: controller.selectedIndex,
           children: [
             const DashboardView(),
-            const ChartView(),
+            const CartView(),
             Container(
               color: Colors.red,
             ),
             Container(),
           ],
         ),
-        bottomNavigationBar: Container(
-          height: 60,
-          decoration: const BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(30),
-              topRight: Radius.circular(30),
-            ),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.grey,
-                spreadRadius: 2,
-                blurRadius: 5,
-                offset: Offset(0, 3),
+        bottomNavigationBar: Visibility(
+          visible: controller.selectedIndex != 1,
+          child: Container(
+            height: 60,
+            decoration: const BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(30),
+                topRight: Radius.circular(30),
               ),
-            ],
-          ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              buildNavItem(Icons.home_filled, "Home", 0),
-              buildNavItem(Icons.shopping_cart, "My Chart", 1),
-              buildNavItem(Icons.notifications, "Notification", 2),
-              buildNavItem(Icons.person, "Profile", 3),
-            ],
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey,
+                  spreadRadius: 2,
+                  blurRadius: 5,
+                  offset: Offset(0, 3),
+                ),
+              ],
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                buildNavItem(Icons.home_filled, "Home", 0),
+                buildNavItem(Icons.shopping_cart, "My Chart", 1),
+                buildNavItem(Icons.notifications, "Notification", 2),
+                buildNavItem(Icons.person, "Profile", 3),
+              ],
+            ),
           ),
         ),
       ),

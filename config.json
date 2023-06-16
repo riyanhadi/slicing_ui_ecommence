@@ -4,6 +4,7 @@
         "main_navigation",
         "dashboard",
         "product_detail",
+        "cart",
         "chart"
     ]
 }
